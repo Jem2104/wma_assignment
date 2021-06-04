@@ -18,7 +18,7 @@ df['length'] = bins[:-1]
 x, y = df['length'], df['mean']
 plt.plot(x, y, 'o')
 
-# adding a regression line
+# adding a regression line (which didnt work for the binned scatter for some reason)
 b, m = np.polyfit(x, y, 1)
 plt.plot(x, m*x + b, '-')
 
